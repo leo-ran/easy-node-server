@@ -1,0 +1,43 @@
+{
+  "name": "@easy-node/server",
+  "version": "0.0.1-dev.1",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "@easy-node",
+    "@easy-node/server"
+  ],
+  "scripts": {
+    "test": "mocha --watch",
+    "doc": "typedoc  --tsconfig tsconfig.json",
+    "build": "del-cli ./dist & del-cli ./docs & npm run doc & tsc",
+    "pub": "npm publish --access public",
+    "serve": "ts-node-dev ./test/MyServer"
+  },
+  "repository": {
+    "url": "https://github.com/leo-ran/easy-node-server.git",
+    "type": "github"
+  },
+  "dependencies": {
+    "@easy-node/reflect": "^0.0.1-dev.2",
+    "@types/accepts": "^1.3.5",
+    "@types/content-disposition": "^0.5.3",
+    "@types/fresh": "^0.5.0",
+    "@types/mime-types": "^2.1.0",
+    "@types/qs": "^6.9.1",
+    "accepts": "^1.3.7",
+    "content-disposition": "^0.5.3",
+    "fresh": "^0.5.2",
+    "mime-types": "^2.1.27",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "del-cli": "^3.0.0",
+    "mocha": "^7.0.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typedoc": "^0.17.6"
+  }
+}
