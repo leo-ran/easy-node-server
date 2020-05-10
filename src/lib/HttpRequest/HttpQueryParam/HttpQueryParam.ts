@@ -6,7 +6,7 @@ import {ObjectedMap} from "../../ObjectedMap";
 export class HttpQueryParam<T extends object> extends ObjectedMap<T> {
   private _rawQueryString: string;
   public set rawQueryString(value) {
-    const query = parse(value, this.options || {});
+    const query = parse(value, this.options || {}) as T;
     (<Array<keyof T>>Object.keys(query)).forEach(key => {
       this.set(key, query[key]);
     })

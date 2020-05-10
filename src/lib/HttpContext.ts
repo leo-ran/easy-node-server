@@ -1,6 +1,7 @@
 import {HttpRequest} from "./HttpRequest";
 import {HttpResponse} from "./HttpResponse";
 import fresh from "fresh";
+import {HttpMethod} from "./constants/HttpMethod";
 
 
 export class HttpContext<
@@ -24,5 +25,8 @@ export class HttpContext<
     }
 
     return false;
+  }
+  public get method() {
+    return (this.request.method || "GET").toUpperCase() as HttpMethod;
   }
 }

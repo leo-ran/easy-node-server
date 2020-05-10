@@ -1,8 +1,8 @@
 import {ServerResponse as Response} from "http";
 import contentDisposition, { Options } from "content-disposition";
 import mimeTypes from "mime-types";
-import {MimeTypes} from "./MimeTypes";
-import {HttpStatus} from "./HttpStatus";
+import {MimeTypes} from "./constants/MimeTypes";
+import {HttpStatus} from "./constants/HttpStatus";
 
 export class HttpResponse extends Response {
 

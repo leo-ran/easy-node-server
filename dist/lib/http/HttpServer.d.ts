@@ -4,9 +4,12 @@ import { HttpResponse } from "../HttpResponse";
 import { HttpContext } from "../HttpContext";
 import { HttpServerOption } from "./HttpServerOption";
 import { Server } from "http";
+import { Router } from "../router/Router";
 export declare abstract class HttpServer extends Server {
-    protected constructor(options?: HttpServerOption);
-    abstract handlerResponse(context: HttpContext): void;
+    router: Router;
+    constructor(options?: HttpServerOption);
+    private handleRequest;
+    abstract handlerResponse(context: HttpContext): void | Promise<void>;
     /**
      * 创建 Context
      * @param request

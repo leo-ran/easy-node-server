@@ -8,5 +8,5 @@ describe("Etag.spec.ts", () => {
   const file = new File(path.resolve("Readme.md"));
   const etag = Etag.fromFile("/test", file, "strict");
 
-  console.log(Etag.parse(etag.stringify()));
+  // console.log(Etag.parse(etag.stringify()));
 });

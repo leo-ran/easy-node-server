@@ -1,8 +1,8 @@
 /// <reference types="node" />
 import { ServerResponse as Response } from "http";
 import { Options } from "content-disposition";
-import { MimeTypes } from "./MimeTypes";
-import { HttpStatus } from "./HttpStatus";
+import { MimeTypes } from "./constants/MimeTypes";
+import { HttpStatus } from "./constants/HttpStatus";
 export declare class HttpResponse extends Response {
     get status(): HttpStatus;
     set status(value: HttpStatus);

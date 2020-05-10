@@ -20,5 +20,8 @@ class HttpContext {
         }
         return false;
     }
+    get method() {
+        return (this.request.method || "GET").toUpperCase();
+    }
 }
 exports.HttpContext = HttpContext;

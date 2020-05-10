@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HttpContext | @easy-node/server - v0.0.1-dev.2</title>
-	<meta name="description" content="Documentation for @easy-node/server - v0.0.1-dev.2">
+	<title>HttpContext | @easy-node/server - v0.0.2</title>
+	<meta name="description" content="Documentation for @easy-node/server - v0.0.2">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@easy-node/server - v0.0.1-dev.2</a>
+					<a href="../index.html" class="title">@easy-node/server - v0.0.2</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -106,6 +106,7 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="httpcontext.html#fresh" class="tsd-kind-icon">fresh</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="httpcontext.html#method" class="tsd-kind-icon">method</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/46a6665/src/lib/HttpContext.ts#L9">src/lib/HttpContext.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/HttpContext.ts#L10">src/lib/HttpContext.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Req</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/46a6665/src/lib/HttpContext.ts#L11">src/lib/HttpContext.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/HttpContext.ts#L12">src/lib/HttpContext.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Res</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/46a6665/src/lib/HttpContext.ts#L12">src/lib/HttpContext.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/HttpContext.ts#L13">src/lib/HttpContext.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,10 +176,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/46a6665/src/lib/HttpContext.ts#L15">src/lib/HttpContext.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/HttpContext.ts#L16">src/lib/HttpContext.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="method" class="tsd-anchor"></a>
+					<h3>method</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> method<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/httpmethod.html" class="tsd-signature-type">HttpMethod</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/HttpContext.ts#L29">src/lib/HttpContext.ts:29</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/httpmethod.html" class="tsd-signature-type">HttpMethod</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -194,6 +212,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/httpmethod.html" class="tsd-kind-icon">Http<wbr>Method</a>
+					</li>
 					<li class=" tsd-kind-enum">
 						<a href="../enums/httpstatus.html" class="tsd-kind-icon">Http<wbr>Status</a>
 					</li>
@@ -229,10 +250,19 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="httpcontext.html#fresh" class="tsd-kind-icon">fresh</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="httpcontext.html#method" class="tsd-kind-icon">method</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="httpexception.html" class="tsd-kind-icon">Http<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="httppathparam.html" class="tsd-kind-icon">Http<wbr>Path<wbr>Param</a>
+					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="httpqueryparam.html" class="tsd-kind-icon">Http<wbr>Query<wbr>Param</a>
 					</li>
@@ -263,14 +293,32 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="objectedmap.html" class="tsd-kind-icon">Objected<wbr>Map</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="route.html" class="tsd-kind-icon">Route</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="routecollection.html" class="tsd-kind-icon">Route<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="router.html" class="tsd-kind-icon">Router</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/directorycreateoption.html" class="tsd-kind-icon">Directory<wbr>Create<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/httppathparamconstructor.html" class="tsd-kind-icon">Http<wbr>Path<wbr>Param<wbr>Constructor</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/jsonobjectconstructor.html" class="tsd-kind-icon">JSONObject<wbr>Constructor</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/parsedstringetag.html" class="tsd-kind-icon">Parsed<wbr>String<wbr>Etag</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/routehandler.html" class="tsd-kind-icon">Route<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/routeoption.html" class="tsd-kind-icon">Route<wbr>Option</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#defaultdecoder" class="tsd-kind-icon">Default<wbr>Decoder</a>
@@ -280,6 +328,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="../globals.html#jsonobject" class="tsd-kind-icon">JSONObject</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#rawmethod" class="tsd-kind-icon">Raw<wbr>Method</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../globals.html#jsonobject" class="tsd-kind-icon">JSONObject</a>
@@ -308,14 +359,15 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>

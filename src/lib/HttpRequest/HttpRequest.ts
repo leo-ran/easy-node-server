@@ -1,7 +1,7 @@
 import {IncomingMessage} from "http";
 import {UrlWithStringQuery} from "url";
 import * as url from "url";
-import {MimeTypes} from "../MimeTypes";
+import {MimeTypes} from "../constants/MimeTypes";
 import {HttpQueryParam} from "./HttpQueryParam/HttpQueryParam";
 import accepts, {Accepts} from "accepts";
 
