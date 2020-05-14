@@ -8,8 +8,8 @@ class ObjectedMap extends Map {
     get(key) {
         return super.get(key);
     }
-    toJSON() {
-        return this.toJSONObject().stringify();
+    stringify(space = 0) {
+        return this.toJSONObject().stringify(space);
     }
     toJSONObject() {
         return ObjectedMap.toJSONObject(this);

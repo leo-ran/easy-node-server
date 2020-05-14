@@ -22,7 +22,7 @@ export class HttpQueryParam<T extends object> extends ObjectedMap<T> {
     this.rawQueryString = queryString;
   }
 
-  public stringify(option?: HttpQueryParamStringifyOption): string {
+  public toJson(option?: HttpQueryParamStringifyOption): string {
     return HttpQueryParam.stringify(this, option);
   }
 

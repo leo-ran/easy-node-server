@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HttpPathParam | @easy-node/server - v0.0.2</title>
-	<meta name="description" content="Documentation for @easy-node/server - v0.0.2">
+	<title>HttpPathParam | @easy-node/server - v0.0.4</title>
+	<meta name="description" content="Documentation for @easy-node/server - v0.0.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@easy-node/server - v0.0.2</a>
+					<a href="../index.html" class="title">@easy-node/server - v0.0.4</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -125,7 +125,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited"><a href="httppathparam.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="httppathparam.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited"><a href="httppathparam.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="httppathparam.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="httppathparam.html#stringify" class="tsd-kind-icon">stringify</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="httppathparam.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="httppathparam.html#tojsonobject" class="tsd-kind-icon">toJSONObject</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="httppathparam.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="httppathparam.html#tojson-1" class="tsd-kind-icon">toJSON</a></li>
@@ -147,7 +148,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/router/HttpPathParam.ts#L7">src/lib/router/HttpPathParam.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/router/HttpPathParam.ts#L7">src/lib/router/HttpPathParam.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,7 +283,7 @@
 								<p>Inherited from <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#get">get</a></p>
 								<p>Overrides Map.get</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/ObjectedMap.ts#L9">src/lib/ObjectedMap.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/ObjectedMap.ts#L9">src/lib/ObjectedMap.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -337,7 +338,7 @@
 								<p>Inherited from <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#set">set</a></p>
 								<p>Overrides Map.set</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/ObjectedMap.ts#L5">src/lib/ObjectedMap.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/ObjectedMap.ts#L5">src/lib/ObjectedMap.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -362,18 +363,41 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="stringify" class="tsd-anchor"></a>
+					<h3>stringify</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">stringify<span class="tsd-signature-symbol">(</span>space<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#stringify">stringify</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/ObjectedMap.ts#L13">src/lib/ObjectedMap.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> space: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span>space<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/router/HttpPathParam.ts#L20">src/lib/router/HttpPathParam.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/router/HttpPathParam.ts#L20">src/lib/router/HttpPathParam.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,7 +428,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#tojsonobject">toJSONObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/router/HttpPathParam.ts#L27">src/lib/router/HttpPathParam.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/router/HttpPathParam.ts#L27">src/lib/router/HttpPathParam.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,7 +456,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/router/HttpPathParam.ts#L39">src/lib/router/HttpPathParam.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/router/HttpPathParam.ts#L39">src/lib/router/HttpPathParam.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/router/HttpPathParam.ts#L48">src/lib/router/HttpPathParam.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/router/HttpPathParam.ts#L48">src/lib/router/HttpPathParam.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -508,7 +532,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="objectedmap.html">ObjectedMap</a>.<a href="objectedmap.html#tojsonobject">toJSONObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/ObjectedMap.ts#L21">src/lib/ObjectedMap.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/ObjectedMap.ts#L21">src/lib/ObjectedMap.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -598,7 +622,10 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited">
 								<a href="httppathparam.html#set" class="tsd-kind-icon">set</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="httppathparam.html#stringify" class="tsd-kind-icon">stringify</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="httppathparam.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">

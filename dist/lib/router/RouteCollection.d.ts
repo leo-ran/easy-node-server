@@ -14,7 +14,7 @@ export declare class RouteCollection extends Set<Route> {
      * 转换json
      * @param space
      */
-    toJSON(space?: number): string;
+    toJson(space?: number): string;
     handlerResponse(context: HttpContext): Promise<void>;
     static create(...routes: Route[]): RouteCollection;
 }

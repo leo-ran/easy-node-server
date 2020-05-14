@@ -10,8 +10,8 @@ export class ObjectedMap<T extends object> extends Map {
     return super.get(key);
   }
 
-  public toJSON(): string {
-    return this.toJSONObject().stringify();
+  public stringify(space: number = 0): string {
+    return this.toJSONObject().stringify(space);
   }
 
   public toJSONObject(): JSONObject<T> {

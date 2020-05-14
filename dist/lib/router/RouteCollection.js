@@ -27,17 +27,18 @@ class RouteCollection extends Set {
      * 转换json
      * @param space
      */
-    toJSON(space = 2) {
+    toJson(space = 2) {
         return JSON.stringify(this.toArray(), null, space);
     }
     async handlerResponse(context) {
         for (let route of this) {
             if (route.regexp.test(context.request.url || "") && (route.method === HttpMethod_1.HttpMethod.ALL || route.method === context.method)) {
-                if (route.children) {
-                    await route.children.handlerResponse(context);
-                }
+                // 调整执行顺序，有可能父路由会有拦截行为
                 if (typeof route.handler === "function") {
                     await route.handler(context, route);
+                }
+                if (route.children) {
+                    await route.children.handlerResponse(context);
                 }
             }
             if (context.response.writableFinished)

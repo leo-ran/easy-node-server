@@ -31,18 +31,19 @@ export class RouteCollection extends Set<Route>{
    * 转换json
    * @param space
    */
-  public toJSON(space: number = 2) {
+  public toJson(space: number = 2) {
     return JSON.stringify(this.toArray(), null, space)
   }
 
   public async handlerResponse(context: HttpContext): Promise<void> {
     for (let route of this) {
       if (route.regexp.test(context.request.url || "") && (route.method === HttpMethod.ALL || route.method === context.method)) {
-        if (route.children) {
-          await route.children.handlerResponse(context);
-        }
+        // 调整执行顺序，有可能父路由会有拦截行为
         if (typeof route.handler === "function") {
           await route.handler(context, route);
+        }
+        if (route.children) {
+          await route.children.handlerResponse(context);
         }
       }
       if (context.response.writableFinished) break;

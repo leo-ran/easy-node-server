@@ -19,7 +19,7 @@ class HttpQueryParam extends ObjectedMap_1.ObjectedMap {
     get rawQueryString() {
         return this._rawQueryString;
     }
-    stringify(option) {
+    toJson(option) {
         return HttpQueryParam.stringify(this, option);
     }
     static createParseOption(option) {

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HttpServer | @easy-node/server - v0.0.2</title>
-	<meta name="description" content="Documentation for @easy-node/server - v0.0.2">
+	<title>HttpServer | @easy-node/server - v0.0.4</title>
+	<meta name="description" content="Documentation for @easy-node/server - v0.0.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@easy-node/server - v0.0.2</a>
+					<a href="../index.html" class="title">@easy-node/server - v0.0.4</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -119,6 +119,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="httpserver.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="httpserver.html#off" class="tsd-kind-icon">off</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="httpserver.html#onexception" class="tsd-kind-icon">on<wbr>Exception</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
@@ -148,7 +149,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Server.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/http/HttpServer.ts#L11">src/lib/http/HttpServer.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L11">src/lib/http/HttpServer.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -258,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <a href="router.html" class="tsd-signature-type">Router</a><span class="tsd-signature-symbol"> = new Router()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/http/HttpServer.ts#L11">src/lib/http/HttpServer.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L11">src/lib/http/HttpServer.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -708,7 +709,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/http/HttpServer.ts#L18">src/lib/http/HttpServer.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L20">src/lib/http/HttpServer.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -731,7 +732,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/http/HttpServer.ts#L39">src/lib/http/HttpServer.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L49">src/lib/http/HttpServer.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1217,6 +1218,38 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="onexception" class="tsd-anchor"></a>
+					<h3>on<wbr>Exception</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Exception&lt;E&gt;<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="httpcontext.html" class="tsd-signature-type">HttpContext</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L33">src/lib/http/HttpServer.ts:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>E<span class="tsd-signature-symbol">: </span><a href="httpexception.html#error" class="tsd-signature-type">Error</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="httpcontext.html" class="tsd-signature-type">HttpContext</a></h5>
+								</li>
+								<li>
+									<h5>e: <span class="tsd-signature-type">E</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1996,7 +2029,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/9980102/src/lib/http/HttpServer.ts#L46">src/lib/http/HttpServer.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/leo-ran/easy-node-server/blob/3ee547f/src/lib/http/HttpServer.ts#L56">src/lib/http/HttpServer.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2149,6 +2182,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="httpserver.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="httpserver.html#onexception" class="tsd-kind-icon">on<wbr>Exception</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="httpserver.html#once" class="tsd-kind-icon">once</a>

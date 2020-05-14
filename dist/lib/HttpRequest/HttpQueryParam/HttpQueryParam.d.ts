@@ -7,7 +7,7 @@ export declare class HttpQueryParam<T extends object> extends ObjectedMap<T> {
     set rawQueryString(value: string);
     get rawQueryString(): string;
     constructor(queryString: string, options?: HttpQueryParamParseOption);
-    stringify(option?: HttpQueryParamStringifyOption): string;
+    toJson(option?: HttpQueryParamStringifyOption): string;
     static createParseOption<T extends HttpQueryParamParseOption>(option?: T): HttpQueryParamParseOption;
     static createStringifyOption<T extends HttpQueryParamStringifyOption>(option?: T): HttpQueryParamStringifyOption;
     static parse<T extends object, O extends HttpQueryParamParseOption>(str: string, option?: O): HttpQueryParam<T>;

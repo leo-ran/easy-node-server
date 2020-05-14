@@ -10,6 +10,7 @@ class HttpServer extends http_1.Server {
     constructor(options = HttpServerOption_1.HttpServerOption.create()) {
         super(options.toJSONObject(), (req, res) => this.handleRequest(HttpServer.createContext(req, res)));
         this.router = new Router_1.Router();
+        this.on("exception", (context, e) => this.onException(context, e));
     }
     async handleRequest(context) {
         try {
@@ -19,18 +20,25 @@ class HttpServer extends http_1.Server {
             }
         }
         catch (e) {
-            if (e instanceof exception_1.HttpException) {
-                context.response.statusMessage = e.message;
-                context.response.statusCode = e.code;
-                if (process.env.EASY_NODE_ENV === "development") {
-                    context.response.end(e.stack);
-                }
-                context.response.end(`${e.message} ${e.code}`);
+            if (this.listenerCount("exception")) {
+                this.emit("exception", context, e);
             }
-            else {
-                context.response.statusCode = 500;
-                context.response.end(`HttpException INTERNAL SERVER ERROR`);
-            }
+        }
+    }
+    onException(context, e) {
+        // 如果为开发模式 输出错误信息
+        if (process.env.EASY_NODE_ENV === "development") {
+            context.response.end(e.stack);
+        }
+        if (e instanceof exception_1.HttpException) {
+            context.response.statusMessage = e.message;
+            context.response.statusCode = e.code;
+            context.response.end(`${e.message} ${e.code}`);
+        }
+        else {
+            // 监听异常
+            context.response.statusCode = 500;
+            context.response.end(`HttpException INTERNAL SERVER ERROR`);
         }
     }
     /**
