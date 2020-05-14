@@ -32,7 +32,8 @@ class RouteCollection extends Set {
     }
     async handlerResponse(context) {
         for (let route of this) {
-            if (route.regexp.test(context.request.url || "") && (route.method === HttpMethod_1.HttpMethod.ALL || route.method === context.method)) {
+            // 去掉查询字符串
+            if (route.regexp.test(context.request.URL.path || "") && (route.method === HttpMethod_1.HttpMethod.ALL || route.method === context.method)) {
                 // 调整执行顺序，有可能父路由会有拦截行为
                 if (typeof route.handler === "function") {
                     await route.handler(context, route);
