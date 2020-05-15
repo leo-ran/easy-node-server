@@ -19,7 +19,7 @@ export class HttpResponse extends Response {
     return type.split(';', 1)[0];
   }
   public set contentType(value: string | MimeTypes) {
-    const mime = HttpResponse.getMimeType(value);
+    const mime = HttpResponse.getMimeType(value) || value;
     if (mime) this.setHeader("Content-Type", mime);
   }
 
