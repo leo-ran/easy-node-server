@@ -1,8 +1,8 @@
-import {HttpStatus} from "../constants/HttpStatus";
+import {HttpStatus} from "../constants";
 
 export class HttpException extends Error{
-  constructor(public code: HttpStatus) {
-    super(HttpStatus[code].replace(/(-|_)/g, " "));
+  constructor(public code: HttpStatus, message?: string) {
+    super(message || HttpStatus[code].replace(/(-|_)/g, " "));
   }
 }
 
