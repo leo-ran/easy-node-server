@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpServerOption = void 0;
 const HttpRequest_1 = require("../HttpRequest");
 const HttpResponse_1 = require("../HttpResponse");
 const ObjectedMap_1 = require("../ObjectedMap");

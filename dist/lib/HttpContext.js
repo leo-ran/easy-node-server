@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpContext = void 0;
 const fresh_1 = __importDefault(require("fresh"));
 class HttpContext {
     constructor(request, response) {

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpQueryParam = void 0;
 const qs_1 = require("qs");
 const HttpQueryParamParseOption_1 = require("./HttpQueryParamParseOption");
 const HttpQueryParamStringifyOption_1 = require("./HttpQueryParamStringifyOption");
@@ -19,7 +20,7 @@ class HttpQueryParam extends ObjectedMap_1.ObjectedMap {
     get rawQueryString() {
         return this._rawQueryString;
     }
-    toJson(option) {
+    toQueryString(option) {
         return HttpQueryParam.stringify(this, option);
     }
     static createParseOption(option) {

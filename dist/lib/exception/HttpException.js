@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const HttpStatus_1 = require("../constants/HttpStatus");
+exports.HttpException = void 0;
+const constants_1 = require("../constants");
 class HttpException extends Error {
-    constructor(code) {
-        super(HttpStatus_1.HttpStatus[code].replace(/(-|_)/g, " "));
+    constructor(code, message) {
+        super(message || constants_1.HttpStatus[code].replace(/(-|_)/g, " "));
         this.code = code;
     }
 }

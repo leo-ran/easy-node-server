@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ObjectedMap = void 0;
 const JSONObject_1 = require("./JSONObject");
 class ObjectedMap extends Map {
     set(key, value) {

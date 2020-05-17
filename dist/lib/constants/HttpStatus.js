@@ -4,6 +4,7 @@
  * @enum HttpStatus
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpStatus = void 0;
 var HttpStatus;
 (function (HttpStatus) {
     HttpStatus[HttpStatus["CONTINUE"] = 100] = "CONTINUE";

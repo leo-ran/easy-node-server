@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Router = void 0;
 const Route_1 = require("./Route");
 const RouteCollection_1 = require("./RouteCollection");
 class Router {

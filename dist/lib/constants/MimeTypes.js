@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MimeTypes = void 0;
 var MimeTypes;
 (function (MimeTypes) {
     MimeTypes["abs"] = "audio/x-mpeg";

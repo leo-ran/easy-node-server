@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpPathParam = void 0;
 const ObjectedMap_1 = require("../ObjectedMap");
 const JSONObject_1 = require("../JSONObject");
 /**

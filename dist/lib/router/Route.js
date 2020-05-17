@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Route = void 0;
 const path_to_regexp_1 = require("path-to-regexp");
 const HttpMethod_1 = require("../constants/HttpMethod");
 const RouteCollection_1 = require("./RouteCollection");

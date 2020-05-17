@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RouteCollection = void 0;
 const exception_1 = require("../exception");
 const HttpStatus_1 = require("../constants/HttpStatus");
 const HttpMethod_1 = require("../constants/HttpMethod");
